@@ -2,6 +2,7 @@
 import React from 'react';
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
 } from 'react-router-dom';
 import Navbar from './components/Navbar'; // Import Navbar
@@ -11,17 +12,34 @@ import Home from './pages/Home';
 import Single from './pages/Single';
 import Write from './pages/Write';
 import Footer from './components/Footer'; // Import Footer
+const Layout = ()=>{
+  return(
+    <>
+    <Navbar/>
+    <Outlet/>
+    <Footer/>
+    </>
+  )
+};
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <div>
-        <Navbar /> {/* Render Navbar */}
-        <Home />
-        <Footer /> {/* Render Footer */}
-      </div>
-    ),
+    element: <Layout/>,
+    children:[
+      {
+        path: '/',
+        element: <Home/>,
+      },
+      {
+        path: '/post/:id',
+        element: <Single/>,
+      },
+      {
+        path: '/Write',
+        element: <Write/>,
+      },
+    ]
   },
   {
     path: '/register',
@@ -35,8 +53,11 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div className='app'>
+      <div className="container">
       <RouterProvider router={router}/>
+      </div> 
+     
     </div>
   ); 
 }
