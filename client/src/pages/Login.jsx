@@ -5,9 +5,13 @@ function Login() {
     <div className='auth'>
       <h1>Login</h1>
       <form>
-        <input type="text" placeholder='username' />
-        <input type="password" placeholder='password' />
+        <input required type="text" placeholder='username' />
+        <input required type="password" placeholder='password' />
         <button>Login</button>
+        <p>this is an error</p>
+        <span>Don't you have an account? <br/>
+          <a href='register'>Register</a>
+        </span>
       </form>
     </div>
   )
