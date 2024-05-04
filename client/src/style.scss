@@ -1,6 +1,9 @@
 $LightGreen : #b9e7e7;
 .app{
+    display: flex;
+    justify-content: center;
     .container{
+        width: 1024px;
         .auth{
             display: flex;
             flex-direction: column;
@@ -47,5 +50,18 @@ $LightGreen : #b9e7e7;
         }
       
     }   
+    .navbar{
+        .container{
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+
+            }
+            .links{
+
+            }
+        }
+    }
 
 }
