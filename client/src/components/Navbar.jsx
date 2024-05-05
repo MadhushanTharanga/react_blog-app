@@ -5,9 +5,7 @@ function Navbar() {
   return (
     <div className='navbar'>
       <div className="container">
-        {/* <div className="logo">
-          <img src="{Logo}" alt="" />
-        </div> */}
+        <div className="logo">logo</div>
         <div className="links">Navbar</div>
       </div>
     </div>
