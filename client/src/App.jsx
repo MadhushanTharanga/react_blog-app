@@ -12,7 +12,7 @@ import Home from './pages/Home';
 import Single from './pages/Single';
 import Write from './pages/Write';
 import Footer from './components/Footer'; // Import Footer
-// import "./style.scss"
+import "./style.scss"
 const Layout = ()=>{
   return(
     <>

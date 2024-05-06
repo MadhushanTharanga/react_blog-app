@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Register() {
   const [username, setUsername] = useState('');
@@ -31,8 +32,7 @@ function Register() {
         <input required type="password" placeholder='password' value={password} onChange={handlePasswordChange} />
         <button>Register</button>
         <p>this is an error</p>
-        <span>Do you have an account? <br/>
-          <a href='login'>Login</a>
+        <span>Do you have an account? <Link to="/login">Login</Link>
         </span>
       </form>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Login() {
   return (
@@ -9,8 +10,7 @@ function Login() {
         <input required type="password" placeholder='password' />
         <button>Login</button>
         <p>this is an error</p>
-        <span>Don't you have an account? <br/>
-          <a href='register'>Register</a>
+        <span>Don't you have an account? <Link to="/register">Register</Link>
         </span>
       </form>
     </div>
