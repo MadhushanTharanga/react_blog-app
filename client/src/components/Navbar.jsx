@@ -1,12 +1,18 @@
 import React from 'react'
-// import Logo from "../img/logo.png"
+import { Link } from 'react-router-dom'
+import Logo from "../img/logo.png"
 
 function Navbar() {
   return (
     <div className='navbar'>
       <div className="container">
-        <div className="logo">logo</div>
-        <div className="links">Navbar</div>
+        <div className="logo">
+          <img src={Logo} alt="" />
+        </div>
+        <div className="links">
+          <Link to="/">ART</Link>
+        </div>
+
       </div>
     </div>
   )
