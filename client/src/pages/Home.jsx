@@ -6,7 +6,7 @@ const Home = () => {
   const posts = [
     {
       id:1,
-      title: "Lorem ipsum dolor sit amet consectetur, delectus quia libero! Voluptatibus possimus debitis assumenda dolore culpa quos repellat!",
+      title: "Lorem ipsum dolor  quia libero! Voluptatibus possimus debitis assumenda dolore culpa quos repellat!",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque magni numquam, ad perferendis nam totam quam voluptate consequatur, delectus quia libero! Voluptatibus possimus debitis assumenda dolore culpa quos repellat!",
       img:"https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
@@ -14,7 +14,7 @@ const Home = () => {
       id:2,
       title: "Lorem  nam totam quam voluptate consequatur, delectus quia libero! Voluptatibus possimus debitis assumenda dolore culpa quos repellat!",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque magni numquam, ad perferendis nam totam quam voluptate consequatur, delectus quia libero! Voluptatibus possimus debitis assumenda dolore culpa quos repellat!",
-      img: "https://images.pexels.com/photos/161559/background-bitter-breakfast-bright-161559.jpeg?auto=compress&cs=tinysrgb&w=600"
+      img: "https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id:3,
