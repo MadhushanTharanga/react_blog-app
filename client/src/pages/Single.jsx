@@ -1,4 +1,6 @@
 import React from 'react'
+import Edit from '../img/edit.png'
+import Delete from '../img/delete.png'
 
 function Single() {
   return (
@@ -10,6 +12,12 @@ function Single() {
         <div className="info">
           <span> John</span>
           <p>Posted 2days ago</p>
+        </div>
+        <div className="edit">
+          <Link>
+          </Link>
+          <img src={Edit} alt="" />
+          <img src={Delete} alt="" />
         </div>
         </div>
       </div>
