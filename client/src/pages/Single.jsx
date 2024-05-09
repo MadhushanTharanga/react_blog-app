@@ -1,6 +1,7 @@
 import React from 'react'
 import Edit from '../img/edit.png'
 import Delete from '../img/delete.png'
+import { Link } from 'react-router-dom'
 
 function Single() {
   return (
@@ -14,7 +15,7 @@ function Single() {
           <p>Posted 2days ago</p>
         </div>
         <div className="edit">
-          <Link>
+          <Link to={`write?edit=2`}>
           </Link>
           <img src={Edit} alt="" />
           <img src={Delete} alt="" />
